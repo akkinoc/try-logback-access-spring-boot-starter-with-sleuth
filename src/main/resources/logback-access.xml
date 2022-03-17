@@ -2,7 +2,7 @@
 <configuration>
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>common</pattern>
+            <pattern>%h %l %u [%t] "%r" %s %b [%reqAttribute{example.SleuthAttrsFilter.traceId}, %reqAttribute{example.SleuthAttrsFilter.spanId}]</pattern>
         </encoder>
     </appender>
     <appender-ref ref="console"/>
